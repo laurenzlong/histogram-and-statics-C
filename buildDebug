@@ -1,0 +1,12 @@
+#Script to run all functions, with the debug outputs. 
+#Lauren Long, 8zl1
+#CISC 220, Fall 2012
+#Assignment 6
+
+gcc -c -Wall assn6.c
+gcc -c -Wall readMarks.c
+gcc -c -Wall statistics.c
+gcc -c -Wall -DDEBUG=1 histogram.c
+
+gcc -o assn6 assn6.o readMarks.o statistics.o histogram.o -lm
+./assn6
